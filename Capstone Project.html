@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnHub — Online Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <svg class="brand-logo" width="40" height="40" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#fff" d="M3 4v16h18V4H3zm16 2v2H5V6h14z"/>
+        </svg>
+        <span class="brand-name">LearnHub</span>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 id="hero-heading">Learn modern skills — at your pace</h1>
+        <p class="lead">Hands-on courses, expert mentors and real-world projects to help you upskill quickly.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#courses">Explore Courses</a>
+          <a class="btn ghost" href="#pricing">See Pricing</a>
+        </div>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/hero-illustration.jpg" alt="Students learning online" />
+      </div>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <section id="courses" class="section container">
+      <header class="section-head">
+        <h2>Popular courses</h2>
+        <p class="muted">Short, practical courses — updated regularly.</p>
+      </header>
+
+      <div class="grid course-grid" aria-live="polite">
+
+        <article class="card course-card">
+          <img src="images/course1.jpg" alt="Web development course thumbnail">
+          <div class="card-body">
+            <h3>Full Stack Web Development</h3>
+            <p class="meta">30 hours • Beginner → Advanced</p>
+            <p class="card-text">Build websites and APIs using HTML, CSS, JavaScript and Node.js.</p>
+            <div class="card-footer">
+              <span class="price">₹1,299</span>
+              <a class="btn small" href="#contact">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card course-card">
+          <img src="images/course2.jpg" alt="Python programming course thumbnail">
+          <div class="card-body">
+            <h3>Python for Data Science</h3>
+            <p class="meta">25 hours • Beginner</p>
+            <p class="card-text">Learn Python, data analysis with pandas, and visualizations.</p>
+            <div class="card-footer">
+              <span class="price">₹999</span>
+              <a class="btn small" href="#contact">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card course-card">
+          <img src="images/course3.jpg" alt="UI/UX design course thumbnail">
+          <div class="card-body">
+            <h3>UI / UX Design Essentials</h3>
+            <p class="meta">18 hours • Beginner</p>
+            <p class="card-text">Design interfaces and prototypes using practical workflows.</p>
+            <div class="card-footer">
+              <span class="price">₹799</span>
+              <a class="btn small" href="#contact">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <aside class="container filters" aria-label="Filters">
+      <form class="filters-form" action="#" method="get">
+        <fieldset>
+          <legend>Filter courses (visual only)</legend>
+          <label>
+            <input type="checkbox" name="level" value="beginner" /> Beginner
+          </label>
+          <label>
+            <input type="checkbox" name="level" value="intermediate" /> Intermediate
+          </label>
+          <label>
+            <input type="checkbox" name="level" value="advanced" /> Advanced
+          </label>
+        </fieldset>
+      </form>
+    </aside>
+
+    <section id="testimonials" class="section container">
+      <h2>Student testimonials</h2>
+      <div class="grid testimonials-grid">
+        <article class="card testimonial-card">
+          <p>"The projects helped me build a portfolio — I got interviews within weeks."</p>
+          <p class="muted">— Neha, Product Designer</p>
+        </article>
+
+        <article class="card testimonial-card">
+          <p>"Clear lessons and great mentors. Support was fast and helpful."</p>
+          <p class="muted">— Rohit, Backend Engineer</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section container">
+      <h2>Pricing plans</h2>
+      <div class="grid pricing-grid">
+        <article class="card price-card">
+          <h3>Starter</h3>
+          <p class="price">₹499 / month</p>
+          <ul>
+            <li>Access to 10 courses</li>
+            <li>Community support</li>
+          </ul>
+          <a class="btn" href="#contact">Choose Plan</a>
+        </article>
+
+        <article class="card price-card featured">
+          <h3>Pro</h3>
+          <p class="price">₹899 / month</p>
+          <ul>
+            <li>All courses</li>
+            <li>Certifications & mentorship</li>
+            <li>Downloadable resources</li>
+          </ul>
+          <a class="btn primary" href="#contact">Get Pro</a>
+        </article>
+
+        <article class="card price-card">
+          <h3>Company</h3>
+          <p class="price">Custom pricing</p>
+          <ul>
+            <li>Team accounts</li>
+            <li>Dedicated onboarding</li>
+          </ul>
+          <a class="btn" href="#contact">Contact Sales</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <h2>Contact / Inquiry</h2>
+      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Inquiry</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-small">LearnHub</p>
+        <p class="muted">© 2025 LearnHub — All rights reserved.</p>
+      </div>
+
+      <div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <p>Follow us</p>
+        <div class="socials">
+          <a aria-label="Twitter" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 5.9c-.6.3-1.2.5-1.9.6.7-.4 1.2-1 1.5-1.7-.6.4-1.3.6-2.1.8C18.7 4.8 17.8 4.5 16.9 4.5c-1.5 0-2.7 1.2-2.7 2.7 0 .2 0 .5.1.7-2.3-.1-4.3-1.2-5.7-2.9-.2.4-.3.8-.3 1.2 0 1 .5 1.9 1.3 2.4-.5 0-1-.2-1.5-.4 0 1.7 1.2 3.1 2.8 3.5-.3.1-.6.1-.9.1-.2 0-.5 0-.7-.1.5 1.6 2 2.8 3.8 2.9-1.4 1.1-3.2 1.7-5.1 1.7H6c1.9 1.2 4.2 1.9 6.6 1.9 7.9 0 12.2-6.6 12.2-12.3v-.6c.9-.6 1.6-1.4 2.2-2.2-.8.4-1.6.7-2.4.8z" fill="#fff"/></svg></a>
+          <a aria-label="LinkedIn" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.98 3.5C4.98 4.9 3.92 6 2.5 6S0 4.9 0 3.5 1.06 1 2.5 1 4.98 2.1 4.98 3.5zM.5 8h4v12h-4V8zM9 8h3.8v1.6h.1c.5-.9 1.8-1.8 3.7-1.8 4 0 4.7 2.6 4.7 6V20h-4v-4.3c0-1-0-2.3-1.4-2.3S13 14 13 15.2V20h-4V8z" fill="#fff"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
